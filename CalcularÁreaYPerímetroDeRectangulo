@@ -1,0 +1,22 @@
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        double AltRectángulo;
+        double AncRectángulo;
+
+        double Área;
+        double Perímetro;
+
+        Console.Write("Altura: ");
+        AltRectángulo = Double.Parse(Console.ReadLine() ?? "");
+        Console.Write("Ancho: ");
+        AncRectángulo = Double.Parse(Console.ReadLine() ?? "");
+
+        Área = AltRectángulo * AncRectángulo;
+        Perímetro = (AltRectángulo + AncRectángulo) * 2;
+
+        Console.WriteLine("La área del rectángulo es: {0}", Área);
+        Console.WriteLine("El perímetro del rectángulo es: {0}", Perímetro);
+    }
+}

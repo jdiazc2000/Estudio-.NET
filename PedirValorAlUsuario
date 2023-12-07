@@ -1,0 +1,11 @@
+internal class Program
+{
+    static void Main(string[] args)
+    {
+     string nombre;
+
+     Console.Write("¿Cómo te llamas?: ");
+     nombre = Console.ReadLine() ?? "";
+     Console.WriteLine("Saludos {0}, un placer", nombre);
+    }
+}

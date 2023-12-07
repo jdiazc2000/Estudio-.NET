@@ -1,0 +1,15 @@
+﻿internal class MostrarVariablesEnConsola
+{
+    static void Main(string[] args)
+    { 
+        Console.WriteLine("Julio"); 
+        Console.WriteLine("MENSAJE");
+
+        int librosNiños = 200;
+        int librosMatematicas = 100;
+        
+        string result =  librosNiños > librosMatematicas ? "mayor" : "menor";
+
+        Console.WriteLine("Existen {0} libros para niños ({1}), que libros de matematica ({2})",result,librosNiños,librosMatematicas);
+    }
+}

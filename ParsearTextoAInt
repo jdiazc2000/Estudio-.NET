@@ -1,0 +1,22 @@
+internal class Program
+{
+    static void Main(string[] args)
+    {
+     int num1 = 5;
+     int num2;
+     int resultado;
+
+    // Preguntamos al usuario el número
+     Console.Write("Dame un númerto para sumarlo: ");
+
+    //Convertimos el valor de entrada a número
+    //num2 = Convert.ToInt32(entrada); <== En el caso de que se haya ingresado un valor erroneo, este colocara un cero para continuar el flujo del código.
+     num2 =  Int32.Parse(Console.ReadLine() ?? "");  //<== En el caso de que se haya ingresado un valor erroneo, este hara un stop al programa y arrojara un mensaje de error.
+
+    //Sumamos el número del usuario más el num1
+     resultado = num1 + num2;
+
+    //Imprimimos el valor de la suma en la consola
+     Console.WriteLine("El resultado es: {0}",resultado);
+    }
+}

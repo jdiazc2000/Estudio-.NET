@@ -1,0 +1,25 @@
+﻿internal class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Julio"); 
+        Console.WriteLine("MENSAJE");
+
+        int numeroLibros, librosNiños, librosMatematicas;
+        double promedioFinal = 9.8;
+        char salon = 'A';
+        char salon2;
+        bool x = true;
+        bool y;
+        
+        decimal promedioExamenes = 8.5M;
+        float promedioExamenes2 = 8.5F;
+
+        numeroLibros = 500;
+        librosNiños = 100;
+        librosMatematicas = 400;
+        salon2 = 'B';
+        y = false;
+
+    }
+}

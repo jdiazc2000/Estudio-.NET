@@ -1,0 +1,14 @@
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        double Celsius;
+        double Fahrenheit;
+
+        Console.Write("Temperatura en Celsius: ");
+        Celsius = Double.Parse(Console.ReadLine() ?? "");
+        Fahrenheit = (double) 9 / 5 * Celsius + 32;
+
+        Console.WriteLine("La temperatura en Grados Fahrenheit es: {0}",Fahrenheit.ToString("0.##"));
+    }
+}
