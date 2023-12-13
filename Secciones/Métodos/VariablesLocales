@@ -1,0 +1,15 @@
+using System.Diagnostics;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        var nombre = "Julio";
+        var calle = "Av. 5";
+        var numero = 10;
+        var califacion = 8.5;
+        var letra = 'A';
+        int numero2 = 6;
+    }
+
+}

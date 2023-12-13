@@ -1,0 +1,25 @@
+using System.Diagnostics;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        int NumAlumnos = 0;
+        int acumulador = 0;
+        int notas = 0;
+        int promedio = 0;
+
+        Console.Write("Ingresa el número de alumnos : ");
+        NumAlumnos = Int32.Parse(Console.ReadLine() ?? "");
+
+        for(int i = 0; i < NumAlumnos ; i++ ){
+           Console.Write("Ingresa la calificación del alumno: ");
+           acumulador = Int32.Parse(Console.ReadLine() ?? "");
+           notas += acumulador;
+           Console.WriteLine("NotaAcumulada: {0}", notas);
+        }
+
+        promedio = notas / NumAlumnos;
+        Console.WriteLine("El promedio de notas es: {0}", promedio);
+    }
+}

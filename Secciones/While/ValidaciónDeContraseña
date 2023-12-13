@@ -1,0 +1,22 @@
+using System.Diagnostics;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        string contraseña1 = "";
+        string contraseña2 = ""; 
+
+        Console.WriteLine("Ingrese su contraseña.");
+        contraseña1 = Console.ReadLine() ?? "";
+ 
+
+        while (contraseña1 != contraseña2)
+        {
+            Console.WriteLine("Ingrese su contraseña nuevamente.");
+            contraseña2 = Console.ReadLine() ?? "";
+       
+        }    
+        Console.WriteLine("Usted se registró correctamente.");
+    }
+}

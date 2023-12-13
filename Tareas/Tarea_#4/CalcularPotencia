@@ -1,0 +1,23 @@
+using System.Diagnostics;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Calculadora de Potencia");
+
+        // Solicitar al usuario que ingrese la base
+        Console.Write("Ingrese la base: ");
+        double baseNumero = Convert.ToDouble(Console.ReadLine());
+
+        // Solicitar al usuario que ingrese el exponente
+        Console.Write("Ingrese el exponente: ");
+        double exponente = Convert.ToDouble(Console.ReadLine());
+
+        // Calcular la potencia utilizando Math.Pow
+        double resultado = Math.Pow(baseNumero, exponente);
+
+        // Mostrar el resultado
+        Console.WriteLine($"El resultado de {baseNumero}^{exponente} es: {resultado}");
+    }
+}

@@ -1,0 +1,23 @@
+using System.Diagnostics;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        byte numAr;
+        string saludoAr;
+        int numPrimoAr;
+
+        Prueba(out numAr, out saludoAr, out numPrimoAr);
+        Console.WriteLine(numAr);
+        Console.WriteLine(saludoAr);
+        Console.WriteLine(numPrimoAr);
+    }
+
+    static void Prueba(out byte numPa, out string saludoAr, out int numPrimoAr)
+    {
+        numPa = 20;
+        saludoAr = "Hola mundo";
+        numPrimoAr = 7;
+    }
+}

@@ -12,3 +12,4 @@ C:\Users\Julio\Desktop\Projects\C#\HolaMundo\obj\Debug\net8.0\refint\HolaMundo.d
 C:\Users\Julio\Desktop\Projects\C#\HolaMundo\obj\Debug\net8.0\HolaMundo.pdb
 C:\Users\Julio\Desktop\Projects\C#\HolaMundo\obj\Debug\net8.0\HolaMundo.genruntimeconfig.cache
 C:\Users\Julio\Desktop\Projects\C#\HolaMundo\obj\Debug\net8.0\ref\HolaMundo.dll
+C:\Users\Julio\Desktop\Projects\C#\HolaMundo\obj\Debug\net8.0\HolaMundo.sourcelink.json

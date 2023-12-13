@@ -1,0 +1,74 @@
+using System.Diagnostics;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        decimal num1, num2;
+        byte opcion;
+
+        do
+        {
+            Console.WriteLine("1. Suma");
+            Console.WriteLine("2. Resta");
+            Console.WriteLine("3. Multiplicación");
+            Console.WriteLine("4. División");
+            Console.WriteLine("Escoge una opción ");
+            opcion = (byte)short.Parse(Console.ReadLine() ?? "");
+        } while ((opcion < 1) || (opcion > 4));
+        Console.WriteLine("Dame el primer número: ");
+        num1 = decimal.Parse(Console.ReadLine() ?? "");
+        Console.WriteLine("Dame el segundo número: ");
+        num2 = decimal.Parse(Console.ReadLine() ?? "");
+
+        switch (opcion)
+        {
+            case 1:
+                Sumar(num1, num2);
+                break;
+            case 2:
+                int resultado = Restar(num1, num2);
+                Console.WriteLine("Resultado: {0}", resultado);
+                break;
+            case 3:
+                Multiplicación(num1, num2);
+                break;
+            case 4:
+                División(num1, num2);
+                break;
+        }
+    }
+
+
+    static void Sumar(decimal num1, decimal num2)
+    {
+        int resultado = Decimal.ToInt32(num1) + Decimal.ToInt32(num2);
+        Console.WriteLine("Resultado: {0}", resultado);
+    }
+
+    static int Restar(decimal num1, decimal num2)
+    {
+        int resultado = Decimal.ToInt32(num1) - Decimal.ToInt32(num2);
+        return resultado;
+    }
+
+    static void Multiplicación(decimal num1, decimal num2)
+    {
+        int resultado = Decimal.ToInt32(num1) * Decimal.ToInt32(num2);
+        Console.WriteLine("Resultado: {0}", resultado);
+    }
+
+    static void División(decimal num1, decimal num2)
+    {
+        if ((Decimal.ToInt32(num1) != 0) && (Decimal.ToInt32(num2) != 0))
+        {
+            int resultado = Decimal.ToInt32(num1) / Decimal.ToInt32(num2);
+            Console.WriteLine("Resultado: {0}", resultado);
+        }
+        else
+        {
+            Console.WriteLine("No es posible dividir entre cero");
+        }
+
+    }
+}

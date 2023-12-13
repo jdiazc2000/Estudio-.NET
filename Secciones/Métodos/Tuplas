@@ -1,0 +1,12 @@
+using System.Diagnostics;
+
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        //Creación de Tupla
+        var persona1 = (nombre: "Luis", edad: 50, numero: 564555516156, dirPostal:001122);
+        Console.WriteLine(persona1.nombre);
+    }
+
+}

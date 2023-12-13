@@ -1,0 +1,18 @@
+internal class Program
+{
+    static void Main(string[] args)
+    {
+        double calf1,calf2,calf3,promedio;
+
+        Console.Write("Dame la calificación del primer alumno: ");
+        calf1 = Double.Parse(Console.ReadLine() ?? "");
+        Console.Write("Dame la calificación del segundo alumno: ");
+        calf2 = Double.Parse(Console.ReadLine() ?? "");
+        Console.Write("Dame la calificación del tercer alumno: ");
+        calf3 = Double.Parse(Console.ReadLine() ?? "");
+
+        promedio = (calf1 + calf2 + calf3) / 3;
+
+        Console.Write("El promedio del alumno es: {0}", promedio);
+    }
+}
